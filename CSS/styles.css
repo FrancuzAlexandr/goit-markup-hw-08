@@ -4,6 +4,9 @@
     --accent-color:#2196F3;
     --seconfary-text-color:#757575;
 }
+
+/* общее */
+
 /* выбрать основной фон, цвет и шрифт для текста*/
 body{
     background:#F5F5F5;
@@ -15,11 +18,25 @@ body{
 li{
     list-style: none;
 }
+/* убрать декорацию ссылок */
 a{
     text-decoration:none;
     font-style: normal;
 }
+/* убийство отступов */
+h1,h2,h3,h4,h5,h6,p,ul{
+    padding: 0;
+    margin: 0;
+}
+/* общий контейнер */
+.container{
+    width: 1170px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 94px;
+}
 /* шапка */
+
 /* логотип */
 .logo{
     font-family: Raleway, cursive;
@@ -28,63 +45,43 @@ a{
     line-height: 1.19;
     color: var(--accent-color);
 }
+/* Логотип буквы другого цвета */
 .logo-color{
     color: #000000;
-    font-family: Raleway, cursive;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
 }
-.logo-footer{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    color: #FFFFFF;
-}
-
-/* Навигация */
-.nav-link, .contact-link{
+/* Навигация+контакты шапки и футера */
+.nav-link, .contact-link, .footer-link{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color:  var(--primary-text-color);    
 }
-.contact-link{
+/* контакты цвет */
+.contact-link, .footer-link{
     color: var(--seconfary-text-color);
 }
-/* подсветка */
-.nav-link:hover, .nav-link:focus{
+/* подсветка навигация+контакты  */
+.nav-link:hover, .nav-link:focus, .contact-link:hover, .contact-link:focus{
     color: var(--accent-color);
 }
-.contact-link:hover, .contact-link:focus{
-    color: var(--accent-color);
-}
+/* подсветка текущей страницы */
 .curent{
     color: var(--accent-color);
 }
-/* кнопки */
-.buttons{
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    background: #F5F4FA;
-    border-radius: 4px;
+/* Линия в хедоре */
+.page-header{
+    border: 1px solid #ECECEC;
 }
-/* подсветка кнопок */
-.buttons:hover, .buttons:focus{
-    color: #FFFFFF;
-    background: var(--accent-color);
-    border-radius: 4px;
-}
-
 /* мейн */
+
 /* герой и футер фон*/
 .hero, .footer{
     background-color: #2F303A;
+}
+/* выравневание по центру герой */
+.hero{
+    text-align: center;
 }
 .hero-title{
     text-transform: uppercase;
@@ -94,6 +91,7 @@ a{
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    margin-bottom: 30px;
 }
 .hero-button{
     color: #F5F5F5;
@@ -104,12 +102,14 @@ a{
     line-height: 1.9;
     letter-spacing: 0.06em;
 }
+
 /* преимущества */
 .features-title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .features-text{
     font-weight: 400;
@@ -117,40 +117,99 @@ a{
     line-height: 1.7;
     color: var(--seconfary-text-color);
 }
+/* Чем занимаемся */
+
 /* заголовки h2 */
 .title-team{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-bottom: 50px;
 }
-/* проэкты портфолио */
-.portfolio-projects{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
-/* портфолио фильтры */
-.portfolio-filter{
-    font-size: 16px;
-    line-height: 1.9;
-    color: var(--seconfary-text-color);
+/* Наша команда */
+/* Общий контейнер команды */
+.container-team{
+    width: 1170px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: #F5F4FA;
 }
 /* Сотрудники */
 .employees-name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .employees-job{
     font-size: 16px;
     line-height: 1.19;
     color: var(--seconfary-text-color);
 }
+
+/* Подвал */
+/* контейнер футер */
+.container-footer{
+    width: 1170px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+}
+/* логотип футера */
+.logo-footer{
+    color: #FFFFFF;
+}
 /* футер адрес*/
 .addres-link{
     font-size: 14px;
     line-height: 1.7;
     color: #FFFFFF;
+}
+/* Подсветка адреса */
+.addres-link:hover, .addres-link:focus, .footer-link:hover, .footer-link:focus{
+    color: var(--accent-color);
+}
+
+/* 2 страница портфолио */
+/* мейн 2 страница */
+
+/* кнопки фильтры */
+.buttons{
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+/* подсветка фильтров */
+.buttons:hover, .buttons:focus{
+    color: #FFFFFF;
+    background: var(--accent-color);
+    border-radius: 4px;
+}
+/*  имя проекта */
+.portfolio-projects{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+/* тип проекта */
+.portfolio-filter{
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--seconfary-text-color);
+}
+/* бордер футера в портфолио */
+.footer-line{
+    background-color: #2F303A;
+    border: 1px solid #000000;
 }
