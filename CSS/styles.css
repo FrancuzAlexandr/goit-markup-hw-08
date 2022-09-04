@@ -222,7 +222,7 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 /* логотип футера буквы другого цвета */
 .logo-footer {
@@ -246,8 +246,8 @@ ul {
 }
 /* футер контакты маржен низ */
 .footer-item + .footer-item {
-    margin-top: 9px;
-  }
+  margin-top: 9px;
+}
 /* Подсветка адреса и контакты */
 .addres-link:hover,
 .addres-link:focus,
