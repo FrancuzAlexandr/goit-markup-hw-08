@@ -241,7 +241,7 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 /* логотип футера буквы другого цвета */
 .logo-footer {
