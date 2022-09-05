@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -13,21 +15,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <!-- шапка -->
   <body>
     <header class="page-header">
       <div class="container container-header">
-        <nav class="section">
+        <nav class="flex">
           <a href="" class="logo">Web<span class="logo-color">Studio</span></a>
-          <ul class="site-nav section">
+          <ul class="site-nav flex">
             <li class="item"><a href="./index.html" class="nav-link">Студія</a></li>
             <li class="item"><a href="" class="nav-link curent">Портфоліо</a></li>
             <li class="item"><a href="" class="nav-link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="site-contact section">
+        <ul class="site-contact flex">
           <li class="item">
             <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
           </li>
@@ -42,7 +44,7 @@
       <section>
         <div class="container">
           <h1 hidden>Портфоліо</h1>
-          <ul class="section-filter">
+          <ul class="flex-filter">
             <li class="filter">
               <button type="button" class="buttons">Усі</button>
             </li>
@@ -59,60 +61,69 @@
               <button type="button" class="buttons">Маркетинг</button>
             </li>
           </ul>
-          <ul class="section-flex">
+          <ul class="portfolio-flex">
             <li class="flex-item">
               <img src="./images/img1.jpg" alt="ноут с открытым сайтом" width="370" />
-
-              <h2 class="portfolio-projects">Технокряк</h2>
-              <p class="portfolio-filter">Веб-сайт</p>
+              <div class="portfolio-text">
+                <h2 class="portfolio-projects">Технокряк</h2>
+                <p class="portfolio-filter">Веб-сайт</p>
+              </div>
             </li>
             <li class="flex-item">
               <img src="./images/img2.jpg" alt="2 баскетболиста" width="370" />
-
-              <h2 class="portfolio-projects">Постер New Orlean vs Golden Star</h2>
-              <p class="portfolio-filter">Дизайн</p>
+              <div class="portfolio-text">
+                <h2 class="portfolio-projects">Постер New Orlean vs Golden Star</h2>
+                <p class="portfolio-filter">Дизайн</p>
+              </div>
             </li>
             <li class="flex-item">
               <img src="./images/img3.jpg" alt="логотип ресторана" width="370" />
-
-              <h2 class="portfolio-projects">Ресторан Seafood</h2>
-              <p class="portfolio-filter">Додаток</p>
+              <div class="portfolio-text">
+                <h2 class="portfolio-projects">Ресторан Seafood</h2>
+                <p class="portfolio-filter">Додаток</p>
+              </div>
             </li>
             <li class="flex-item">
               <img src="./images/img4.jpg" alt="наушники" width="370" />
-
-              <h2 class="portfolio-projects">Проєкт Prime</h2>
-              <p class="portfolio-filter">Маркетинг</p>
+              <div class="portfolio-text">
+                <h2 class="portfolio-projects">Проєкт Prime</h2>
+                <p class="portfolio-filter">Маркетинг</p>
+              </div>
             </li>
             <li class="flex-item">
               <img src="./images/img5.jpg" alt="2 коробки" width="370" />
-
-              <h2 class="portfolio-projects">Проєкт Boxes</h2>
-              <p class="portfolio-filter">Додаток</p>
+              <div class="portfolio-text">
+                <h2 class="portfolio-projects">Проєкт Boxes</h2>
+                <p class="portfolio-filter">Додаток</p>
+              </div>
             </li>
             <li class="flex-item">
               <img src="./images/img6.jpg" alt="монитор с включенным сайтом" width="370" />
-
-              <h2 class="portfolio-projects">Inspiration has no Borders</h2>
-              <p class="portfolio-filter">Веб-сайт</p>
+              <div class="portfolio-text">
+                <h2 class="portfolio-projects">Inspiration has no Borders</h2>
+                <p class="portfolio-filter">Веб-сайт</p>
+              </div>
             </li>
             <li class="flex-item">
               <img src="./images/img7.jpg" alt="открытый журнал" width="370" />
-
-              <h2 class="portfolio-projects">Видання Limited Edition</h2>
-              <p class="portfolio-filter">Дизайн</p>
+              <div class="portfolio-text">
+                <h2 class="portfolio-projects">Видання Limited Edition</h2>
+                <p class="portfolio-filter">Дизайн</p>
+              </div>
             </li>
             <li class="flex-item">
               <img src="./images/img8.jpg" alt="бирка с логотипом" width="370" />
-
-              <h2 class="portfolio-projects">Проєкт LAB</h2>
-              <p class="portfolio-filter">Маркетинг</p>
+              <div class="portfolio-text">
+                <h2 class="portfolio-projects">Проєкт LAB</h2>
+                <p class="portfolio-filter">Маркетинг</p>
+              </div>
             </li>
             <li class="flex-item">
               <img src="./images/img9.jpg" alt="ноут на котором печатают" width="370" />
-
-              <h2 class="portfolio-projects">Growing Business</h2>
-              <p class="portfolio-filter">Додаток</p>
+              <div class="portfolio-text">
+                <h2 class="portfolio-projects">Growing Business</h2>
+                <p class="portfolio-filter">Додаток</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -120,11 +131,11 @@
     </main>
     <!-- подвал -->
     <footer class="footer-line">
-      <div class="container-footer">
+      <div class="container">
         <a href="" class="footer-logo">Web<span class="logo-footer">Studio</span></a>
         <address>
           <ul>
-            <li>
+            <li class="footer-item">
               <a
                 href="https://goo.gl/maps/JEq3XthybdLCbuxk8"
                 class="addres-link"
