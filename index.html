@@ -55,7 +55,11 @@
       <section class="hero overlay">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+          <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
+          <!-- <div class="backdrop is-hidden" data-modal>
+            <div class="modal"></div>
+            <button data-modal-close>Закрыть</button>
+          </div> -->
         </div>
       </section>
       <!-- Преимущества -->
@@ -116,14 +120,28 @@
           <h2 class="title-team">Чим ми займаємося</h2>
           <ul class="flex">
             <li class="job-item">
-              <img src="./images/boxa.jpg" alt="рабочий стол" width="370" />
+              <div class="container-shade">
+                <img src="./images/boxa.jpg" alt="рабочий стол" width="370" />
+                <div class="container-shade-text">
+                  <h3 class="text-shade">Десктопні додатки</h3>
+                </div>
+              </div>
             </li>
-
             <li class="job-item">
-              <img src="./images/boxb.jpg" alt="рабочий стол" width="370" />
+              <div class="container-shade">
+                <img src="./images/boxa.jpg" alt="рабочий стол" width="370" />
+                <div class="container-shade-text">
+                  <h3 class="text-shade">Мобільні додатки</h3>
+                </div>
+              </div>
             </li>
             <li class="job-item">
-              <img src="./images/boxc.jpg" alt="рабочий стол" width="370" />
+              <div class="container-shade">
+                <img src="./images/boxa.jpg" alt="рабочий стол" width="370" />
+                <div class="container-shade-text">
+                  <h3 class="text-shade">Дизайнерські рішення</h3>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -395,5 +413,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -103,6 +103,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* контакты цвет */
 .contact-link {
@@ -116,16 +117,27 @@ ul {
 /* подсветка текущей страницы */
 .curent {
   color: var(--accent-txt-cl);
+  position: relative;
+}
+/* линия подчеркивание */
+.curent::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-txt-cl);
+  border-radius: 2px;
 }
 /* соцсети иконки */
 .adress-item {
   display: flex;
   gap: 10px;
-  /* width: 16px;
-    height: 12px; */
 }
-.adress-item > a:hover,
-.adress-item > a:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--accent-txt-cl);
 }
 .adress-icon {
@@ -182,6 +194,7 @@ ul {
   align-items: center;
   text-align: center;
   border: none;
+  cursor: pointer;
 }
 
 /* преимущества */
@@ -233,7 +246,7 @@ ul {
 .section-change {
   padding-top: 0;
 }
-/* width li jobs*/
+/* ширина li jobs*/
 .job-item {
   width: 370px;
 }
@@ -244,6 +257,27 @@ ul {
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50adress-linksection-changepx;
+}
+/* текст h3 */
+.text-shade{
+  font-size: 14px;
+  line-height: 1.33;
+  text-align: center;
+  text-transform: uppercase;
+  color:var(--white-txt-bg-cl);
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+}
+/* Прозрачная надпись и фон поверх фото */
+.container-shade{
+  position: relative;
+}
+.container-shade-text{
+  background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom:0;
+  width: 370px;
 }
 /* Наша команда */
 .section-team {
@@ -303,6 +337,7 @@ ul {
   color: #afb1b8;
   background-color: #ffffff;
   border-radius: 50%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -336,6 +371,7 @@ ul {
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -377,6 +413,7 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   color: var(--white-txt-bg-cl);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* футер контакты */
 .footer-link {
@@ -385,6 +422,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--grey-txt-cl);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* футер контакты маржен низ */
 .footer-item + .footer-item {
@@ -432,6 +470,7 @@ ul {
   padding: 6px 22px;
   border-radius: 4px;
   cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* подсветка фильтров */
 .buttons:hover,
@@ -471,7 +510,31 @@ ul {
 /* каждый проект отдельно */
 .flex-item {
   width: 370px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* текст при ховере портфолио */
+.description-text{
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--white-txt-bg-cl);
+  padding: 63px 24px;
+}
+/* Прозрачная надпись и фон поверх фото */
+.container-portfolio{
+  position: relative;
+}
+.container-portfolio-text{
+  background: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  bottom:0;
+  width: 370px;
+  opacity: 0;
+}
+.container-portfolio-text:hover,
+.container-portfolio-text:focus {
+  opacity: 1;
+}
+/* тень при ховере */
 .flex-item:hover,
 .flex-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -488,4 +551,26 @@ ul {
   border: 1px solid #000000;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+/* модалка герой */
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backdrop .is-hidden{
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.modal{
+  width: 528px;
+  height: 581px;  
+  background-color: var(--white-txt-bg-cl)
+
 }
