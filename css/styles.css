@@ -46,6 +46,11 @@ ul {
   padding: 0;
   margin: 0;
 }
+/* убрать бордер в кнопках,textarea */
+input,
+textarea {
+  outline: transparent;
+}
 /* общий контейнер */
 .container {
   width: 1200px;
@@ -121,7 +126,7 @@ ul {
 }
 /* линия подчеркивание */
 .curent::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   bottom: -1px;
@@ -199,7 +204,7 @@ ul {
 }
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
 }
 /* преимущества */
 .features-item {
@@ -260,28 +265,27 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center
+  text-align: center;
 }
-.flex-margin{
+.flex-margin {
   margin-top: 50px;
 }
 /* текст p */
-.text-shade{
+.text-shade {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-align: center;
   text-transform: uppercase;
-  color:var(--white-txt-bg-cl);
+  color: var(--white-txt-bg-cl);
   padding-top: 27px;
   padding-bottom: 27px;
-
 }
-.container-shade{
+.container-shade {
   background: rgba(47, 48, 58, 0.8);
   position: absolute;
-  bottom:0;
+  bottom: 0;
   width: 100%;
 }
 /* Наша команда */
@@ -342,7 +346,8 @@ ul {
   color: #afb1b8;
   background-color: #ffffff;
   border-radius: 50%;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -376,7 +381,8 @@ ul {
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -475,7 +481,8 @@ ul {
   padding: 6px 22px;
   border-radius: 4px;
   cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* подсветка фильтров */
 .buttons:hover,
@@ -518,31 +525,30 @@ ul {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* текст при ховере портфолио */
-.description-text{
+.description-text {
   font-size: 18px;
   line-height: 1.55;
   color: var(--white-txt-bg-cl);
 }
 /* Прозрачная надпись и фон поверх фото */
-.container-portfolio{
+.container-portfolio {
   position: relative;
   overflow: hidden;
 }
-.container-portfolio-text{
+.container-portfolio-text {
   background: rgba(33, 150, 243, 0.9);
   position: absolute;
-  bottom:0;
+  bottom: 0;
   padding: 63px 24px;
   width: 100%;
   height: 100%;
   left: 0;
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
- 
 }
 .flex-item:hover .container-portfolio-text,
-.flex-item:focus .container-portfolio-text{
- transform: translateY(0);
+.flex-item:focus .container-portfolio-text {
+  transform: translateY(0);
 }
 /* тень при ховере */
 .flex-item:hover,
@@ -580,11 +586,11 @@ ul {
   opacity: 1;
   pointer-events: initial;
   visibility: visible;
-  z-index: 10; 
+  z-index: 10;
   transform: scale(1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 /* зміна стану backdrop (B) */
 .backdrop.is-hidden {
@@ -593,23 +599,19 @@ ul {
   visibility: hidden;
   transform: scale(0);
 }
-
+/* контейнер открытой модалки */
 .modal {
   position: absolute;
 
+  padding: 40px;
   width: 528px;
-  height: 581px;  
-  background-color:var(--white-txt-bg-cl);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  height: 581px;
+  background-color: var(--white-txt-bg-cl);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
-  /* transform: scale(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
-/* .modal::after{
-  transform: scale(1);
-} */
-
+/* кнопка модалки иконка, расположение */
 .modal-btn {
   display: flex;
   align-items: center;
@@ -625,6 +627,219 @@ ul {
 
   background-color: transparent;
   border-radius: 50%;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn:hover,
+.modal-btn:hover {
+  fill: var(--accent-txt-cl);
+}
+/* Форма регистрации */
+/* strong(шапка) */
+.form-title {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-txt-cl);
+}
+/* Отступ от шапки модалки */
+.form-group {
+  margin-bottom: 12px;
+}
+/* label отступ вниз */
+.form-field {
+  position: relative;
+  display: block;
+}
+.form-field:not(:last-child) {
+  margin-bottom: 10px;
+}
+/* отступ span */
+.form-label {
+  display: block;
+  margin-bottom: 4px;
+}
+/* размеры ввода границы */
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  padding-right: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: 250ms;
+}
+/* бордер при фокусе */
+.form-input:focus {
+  border: 1px solid var(--accent-txt-cl);
+}
+/* svg положение фокус */
+.form-icon {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus + .form-icon {
+  fill: var(--accent-txt-cl);
+}
+
+.form-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+}
+/* окно для коментярия */
+.form-message {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+}
+/* текст подсказка */
+.form-message::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+/* настройка checkboxes */
+.form-agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 30px;
+}
+/* кнопка отправить */
+.form-btn {
+  display: block;
+  min-width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-txt-bg-cl);
+
+  border: none;
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* При выборе, замена одной svg на другую меняя прозрачность */
+.form-checkbox {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.form-icon-unchecked {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-checkbox:checked + .form-checkbox-icon .form-icon-unchecked {
+  opacity: 0;
+}
+
+.form-icon-checked {
+  opacity: 0;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-checkbox:checked + .form-checkbox-icon .form-icon-checked {
+  opacity: 1;
+}
+/* span text */
+.form-agreement-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  user-select: none;
+  color: #757575;
+}
+/* Условия договора цвет, подчеркивание */
+.form-agreement-link {
+  text-decoration: underline;
+  text-underline-position: under;
+  color: var(--accent-txt-cl);
+}
+/* форм контейнер */
+.form-container {
+  margin-left: 93px;
+}
+/* футер подписка на почту */
+.footer-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  color: var(--white-txt-bg-cl);
+}
+/* форм для футера */
+.footer-form {
+  display: flex;
+  gap: 12px;
+}
+/* кнопка ввода мыла */
+.footer-mail {
+  display: block;
+  min-width: 358px;
+  padding: 15px;
+  font-size: 1.25;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--dark-bg-cl);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+/* кнопка с иконкой футер */
+.footer-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  min-width: 200px;
+  padding: 10px 28px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+  color: var(--white-txt-bg-cl);
+
+  border: none;
+  background: var(--accent-txt-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* иконка цвет */
+.footer-icon {
+  fill: currentColor;
 }
