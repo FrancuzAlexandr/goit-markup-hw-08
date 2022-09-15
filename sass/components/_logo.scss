@@ -1,20 +1,20 @@
 /* logo styles */
 .logo {
-    font-family: Raleway, cursive;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-  
-    padding-top: 24px;
-    padding-bottom: 25px;
-    
-    color: var(--accent-txt-cl);
-  }
-  
-  .logo__dark {
-    color:var(--black-txt-cl);
-  }
-  
-  .logo__light {
-    color: var(--white-txt-bg-cl);
-  }
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  color: var(--accent-txt-cl);
+}
+
+.logo__dark {
+  color: var(--black-txt-cl);
+}
+
+.logo__light {
+  color: var(--white-txt-bg-cl);
+}

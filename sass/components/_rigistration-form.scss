@@ -1,155 +1,156 @@
 /* Форма регистрации */
 /* strong(шапка) */
 .form__title {
-    display: block;
-    margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-  
-    color: var(--main-txt-cl);
-  }
-  /* Отступ от шапки модалки */
-  .form__group {
-    margin-bottom: 12px;
-  }
-  /* label отступ вниз */
-  .form__field {
-    position: relative;
-    display: block;
-  }
-  .form__field:not(:last-child) {
-    margin-bottom: 10px;
-  }
-  /* отступ span */
-  .form__label {
-    display: block;
-    text-align: left;
-    margin-bottom: 4px;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color:  var(--grey-txt-cl);
-  }
-  /* размеры ввода границы */
-  .form__input {
-    width: 100%;
-    height: 40px;
-    padding-left: 42px;
-    padding-right: 42px;
-  
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-  
-    transition: 250ms;
-  }
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-txt-cl);
+}
+/* Отступ от шапки модалки */
+.form__group {
+  margin-bottom: 12px;
+}
+/* label отступ вниз */
+.form__field {
+  position: relative;
+  display: block;
+}
+.form__field:not(:last-child) {
+  margin-bottom: 10px;
+}
+/* отступ span */
+.form__label {
+  display: block;
+  text-align: left;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--grey-txt-cl);
+}
+/* размеры ввода границы */
+.form__input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  padding-right: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: 250ms;
+
   /* бордер при фокусе */
-  .form__input:focus {
+  &:focus {
     border: 1px solid var(--accent-txt-cl);
   }
-  
-  /* svg положение фокус */
-  .form__icon {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .form__input:focus + .form__icon {
-    fill: var(--accent-txt-cl);
-  }
-  
-  .form__icon {
-    position: absolute;
-    bottom: 11px;
-    left: 12px;
-  }
-  
-  /* окно для коментярия */
-  .form__message {
-    width: 100%;
-    height: 120px;
-    padding: 12px 16px;
-  
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-  
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    resize: none;
-  }
+}
+/* svg положение фокус */
+.form__icon {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__input:focus + .form__icon {
+  fill: var(--accent-txt-cl);
+}
+
+.form__icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+}
+
+/* окно для коментярия */
+.form__message {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+
   /* текст подсказка */
-  .form__message::placeholder {
+  &::placeholder {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-  
+
     color: rgba(117, 117, 117, 0.5);
   }
-  /* настройка checkboxes */
-  .form__agreement {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-    margin-bottom: 30px;
-  }
-  /* кнопка отправить */
-  .form__btn {
-    display: block;
-    min-width: 200px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    color: var(--white-txt-bg-cl);
-  
-    border: none;
-    background: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  /* При выборе, замена одной svg на другую меняя прозрачность */
-  .form__checkbox {
-    position: absolute;
-    opacity: 0;
-    transform: scale(0);
-  }
-  
-  .form__icon--unchecked {
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .form__checkbox:checked + .form__checkbox--icon .form__icon--unchecked {
-    opacity: 0;
-  }
-  
-  .form__icon--checked {
-    opacity: 0;
-  
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .form__checkbox:checked + .form__checkbox--icon .form__icon--checked {
-    opacity: 1;
-  }
-  /* span text */
-  .form__agreement--text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    user-select: none;
-    color: var(--grey-txt-cl);
-  }
-  /* Условия договора цвет, подчеркивание */
-  .form__agreement--link {
-    text-decoration: underline;
-    text-underline-position: under;
-    color: var(--accent-txt-cl);
-  }
+}
+/* настройка checkboxes */
+.form__agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 30px;
+}
+/* кнопка отправить */
+.form__btn {
+  display: block;
+  min-width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-txt-bg-cl);
+
+  border: none;
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* При выборе, замена одной svg на другую меняя прозрачность */
+.form__checkbox {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.form__icon--unchecked {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__checkbox:checked + .form__checkbox--icon .form__icon--unchecked {
+  opacity: 0;
+}
+
+.form__icon--checked {
+  opacity: 0;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__checkbox:checked + .form__checkbox--icon .form__icon--checked {
+  opacity: 1;
+}
+/* span text */
+.form__agreement--text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  user-select: none;
+  color: var(--grey-txt-cl);
+}
+/* Условия договора цвет, подчеркивание */
+.form__agreement--link {
+  text-decoration: underline;
+  text-underline-position: under;
+  color: var(--accent-txt-cl);
+}
