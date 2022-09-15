@@ -1,0 +1,34 @@
+/* ========== Peculiarities =========== */
+.peculiarities__list {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .peculiarities__item {
+    width: 270px;
+  }
+  
+  .peculiarities__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background: var(--light-bg-cl);
+    border-radius: 4px;
+  }
+  
+  .peculiarities__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  
+  .peculiarities__text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--grey-txt-cl);
+  }
+  /* ==================================== */
