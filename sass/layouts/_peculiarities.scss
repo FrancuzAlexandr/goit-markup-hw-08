@@ -1,11 +1,19 @@
 /* ========== Peculiarities =========== */
+
 .peculiarities__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .peculiarities__item {
-  width: 270px;
+  @media screen and(min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and(min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .peculiarities__thumb {
@@ -24,6 +32,10 @@
   text-transform: uppercase;
   margin-bottom: 10px;
   margin-top: 30px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .peculiarities__text {
