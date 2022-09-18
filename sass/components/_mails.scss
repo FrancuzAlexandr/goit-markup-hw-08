@@ -17,6 +17,9 @@
   margin-bottom: 20px;
   
   color: var(--white-txt-bg-cl);
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .mails__form {

@@ -43,5 +43,13 @@
   text-transform: uppercase;
   color: var(--white-txt-bg-cl);
   margin-bottom: 20px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    text-align: left;
+  }
 }
+
+
+
 /* ============================== */
