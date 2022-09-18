@@ -19,6 +19,8 @@
 
   @media screen and (min-width: 1200px) {
     gap:70px;
+    justify-content: start;
+    flex-wrap: nowrap;
   }
 }
 
@@ -65,7 +67,7 @@
   margin-left: 0;
 
   @media screen and (min-width: 768px) {
-    margin-left: auto;
+    margin-left: 165px;
   }
 
   @media screen and (min-width: 1200px) {

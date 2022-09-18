@@ -81,7 +81,7 @@
           aria-controls="mobile-menu"
         >
           <svg class="menu-btn-icon" width="40" height="40">
-            <use href="./images/icon.svg#menu"></use>
+            <use href="./images/icons.svg#menu"></use>
           </svg>
         </button>
       </div>
@@ -211,7 +211,6 @@
           </ul>
         </div>
       </section>
-      -->
       <!--  Work -->
       <section class="work section">
         <div class="work__content container">
@@ -238,7 +237,6 @@
           </ul>
         </div>
       </section>
-      -->
       <!-- Team -->
       <section class="team section">
         <div class="team__container container">
@@ -394,7 +392,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section> 
       <!-- Clients -->
       <section class="clients section">
         <div class="clients__container container">
@@ -444,7 +442,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section> 
     </main>
     <!-- Footer -->
     <footer class="footer">
@@ -526,30 +524,69 @@
     </footer>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-btn menu-toggle js-close-menu">
-        <svg class="menu-btn-icon" width="24" height="24">
-          <use href="./images/icon.svg#icon-close"></use>
+        <svg class="menu-btn-icon" width="40" height="40">
+          <use href="./images/icons.svg#modal"></use>
         </svg>
       </button>
 
-      <ul class="mobile-nav">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
-      </ul>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a
+              href="./index.html"
+              aria-label="Посилання на секцію Студія"
+              class="menu__link menu__link--active"
+              >Студія</a
+            >
+          </li>
+          <li class="menu__item">
+            <a
+              href="./portfolio.html"
+              aria-label="Посилання на сторінку Портфоліо"
+              class="menu__link"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="menu__item">
+            <a href="#contacts" aria-label="Посилання на секцію Контакти" class="menu__link"
+              >Контакти</a
+            >
+          </li>
+        </ul>
+      </nav>
       <!-- <div class="mobile-wrap"> -->
-      <ul class="mobile-contacts">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
-      </ul>
-      <ul class="mobile-socials">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
-      </ul>
+        <ul class="connection">
+          <li class="connection__item">
+            <a class="connection__link href="tel:+380961111111" aria-label="Посилання на номер телефону" class="connection__link">
+              +38 096 111 11 11</a>
+          </li>
+          <li class="connection__item connection__item--mail">
+            <a class="connection__link href="mailto:info@devstudio.com" aria-label="Посилання на єлектронну пошту" class="connection__link">
+              info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="networks">
+          <li class="networks__item">
+            <a class="networks__link" href="Instagram">
+              Instagram
+            </a>
+          </li>
+          <li class="networks__item">
+            <a class="networks__link" href="Twitter">
+              Twitter
+            </a>
+          </li>
+          <li class="networks__item">
+            <a class="networks__link" href="Facebook">
+              Facebook
+            </a>
+          </li>
+          <li class="networks__item">
+            <a class="networks__link" href="LinkedIn">
+              LinkedIn
+            </a>
+          </li>
+        </ul>
       <!-- </div> -->
     </div>
 
