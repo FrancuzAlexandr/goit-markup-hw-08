@@ -217,19 +217,37 @@
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="job">
             <li class="job__item">
-              <img src="./images/boxa.jpg" alt="рабочий стол" width="370" />
+              <img
+              srcset="./images/works/img-1@1x.jpg 1x, ./images/works/img-1@2x.jpg 2x"
+              src="./images/works/img-1@1x.jpg"
+              alt="Десктопні додатки"
+              width="370"
+              height="294"
+            />
               <div class="job__container">
                 <p class="job__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="job__item">
-              <img src="./images/boxa.jpg" alt="рабочий стол" width="370" />
+              <img
+                srcset="./images/works/img-2@1x.jpg 1x, ./images/works/img-2@2x.jpg 2x"
+                src="./images/works/img-2@1x.jpg"
+                alt="Мобільні додатки"
+                width="370"
+                height="294"
+              />
               <div class="job__container">
                 <p class="job__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="job__item">
-              <img src="./images/boxa.jpg" alt="рабочий стол" width="370" />
+              <img
+                srcset="./images/works/img-3@1x.jpg 1x, ./images/works/img-3@2x.jpg 2x"
+                src="./images/works/img-3@1x.jpg"
+                alt="Дизайнерські рішення"
+                width="370"
+                height="294"
+              />
               <div class="job__container">
                 <p class="job__text">Дизайнерські рішення</p>
               </div>
@@ -243,7 +261,23 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="employees">
             <li class="employees__item">
-              <img src="./images/imga.jpg" alt="фото сотрудника" width="270" />
+            <img
+                class="employees__photo"
+                srcset="
+                  ./images/team/team-1_270.jpg 270w,
+                  ./images/team/team-1_354.jpg 354w,
+                  ./images/team/team-1_450.jpg 450w,
+                  ./images/team/team-1_540.jpg 540w,
+                  ./images/team/team-1_708.jpg 708w,
+                  ./images/team/team-1_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw"
+                src="./images/team/team-1_450.jpg"
+                alt="фото Ігора"
+                width="450"
+                height="460"
+                loading="lazy"
+              />
               <div class="employees__container">
                 <h3 class="employees__name">Ігор Дем'яненко</h3>
                 <p class="employees__job">Product Designer</p>
@@ -280,7 +314,23 @@
               </div>
             </li>
             <li class="employees__item">
-              <img src="./images/imgb.jpg" alt="фото сотрудника" width="270" />
+              <img
+              class="employees__photo"
+              srcset="
+                ./images/team/team-2_270.jpg 270w,
+                ./images/team/team-2_354.jpg 354w,
+                ./images/team/team-2_450.jpg 450w,
+                ./images/team/team-2_540.jpg 540w,
+                ./images/team/team-2_708.jpg 708w,
+                ./images/team/team-2_900.jpg 900w
+              "
+              sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw"
+              src="./images/team/team-2.jpg"
+              alt="фото Ольги"
+              width="450"
+              height="460"
+              loading="lazy"
+            />
               <div class="employees__container">
                 <h3 class="employees__name">Ольга Рєпіна</h3>
                 <p class="employees__job">Frontend Developer</p>
@@ -317,7 +367,23 @@
               </div>
             </li>
             <li class="employees__item">
-              <img src="./images/imgc.jpg" alt="фото сотрудника" width="270" />
+              <img
+              class="employees__photo"
+              srcset="
+                ./images/team/team-3_270.jpg 270w,
+                ./images/team/team-3_354.jpg 354w,
+                ./images/team/team-3_450.jpg 450w,
+                ./images/team/team-3_540.jpg 540w,
+                ./images/team/team-3_708.jpg 708w,
+                ./images/team/team-3_900.jpg 900w
+              "
+              sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw"
+              src="./images/team/team-3_450.jpg"
+              alt="фото Миколи"
+              width="450"
+              height="460"
+              loading="lazy"
+            />
               <div class="employees__container">
                 <h3 class="employees__name">Микола Тарасов</h3>
                 <p class="employees__job">Marketing</p>
@@ -354,7 +420,23 @@
               </div>
             </li>
             <li class="employees__item">
-              <img src="./images/imgd.jpg" alt="фото сотрудника" width="270" />
+              <img
+              class="employees__photo"
+              srcset="
+                ./images/team/team-4_270.jpg 270w,
+                ./images/team/team-4_354.jpg 354w,
+                ./images/team/team-4_450.jpg 450w,
+                ./images/team/team-4_540.jpg 540w,
+                ./images/team/team-4_708.jpg 708w,
+                ./images/team/team-4_900.jpg 900w
+              "
+              sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw"
+              src="./images/team/team-4_450.jpg"
+              alt="фото Михайла"
+              width="450"
+              height="460"
+              loading="lazy"
+            />
               <div class="employees__container">
                 <h3 class="employees__name">Михайло Єрмаков</h3>
                 <p class="employees__job">UI Designer</p>
