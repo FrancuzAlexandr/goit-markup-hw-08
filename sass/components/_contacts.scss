@@ -51,7 +51,7 @@
   display: flex;
   align-items: center;
 
-  color: var(--text-color);
+  // color: var(--text-color);
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 12px;
@@ -64,6 +64,10 @@
 }
 
 .contacts__icon--envelope {
+    width: 14px;
+    height: 10px;
+
+
   @media screen and (min-width: 1200px) {
     width: 16px;
     height: 12px;
@@ -71,8 +75,9 @@
 }
 
 .contacts__icon--vector {
-  @media screen and (min-width: 1200px) {
     width: 10px;
+    height: 14px;
+  @media screen and (min-width: 1200px) {
     height: 16px;
   }
 }

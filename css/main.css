@@ -150,25 +150,11 @@ body {
 
 /* logo styles */
 .logo {
-  font-family: Raleway, cursive;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-txt-cl);
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-@media screen and (min-width: 768px) {
-  .logo {
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
 }
 
 .logo__dark {
@@ -180,30 +166,33 @@ body {
 }
 
 /* navigation */
-.nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 50px;
+.nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-left: 87px;
 }
 @media screen and (max-width: 767px) {
-  .nav__list {
+  .nav {
     display: none;
   }
 }
 @media screen and (min-width: 768px) {
-  .nav__list {
+  .nav {
     margin-left: 87px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .nav__list {
+  .nav {
     margin-left: 93px;
   }
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
 }
 
 .nav__link {
@@ -297,7 +286,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: var(--text-color);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__link {
@@ -310,6 +298,10 @@ body {
   margin-right: 10px;
 }
 
+.contacts__icon--envelope {
+  width: 14px;
+  height: 10px;
+}
 @media screen and (min-width: 1200px) {
   .contacts__icon--envelope {
     width: 16px;
@@ -317,9 +309,12 @@ body {
   }
 }
 
+.contacts__icon--vector {
+  width: 10px;
+  height: 14px;
+}
 @media screen and (min-width: 1200px) {
   .contacts__icon--vector {
-    width: 10px;
     height: 16px;
   }
 }
@@ -623,6 +618,15 @@ body {
   color: var(--accent-txt-cl);
 }
 
+.footer__container--socials {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__container--socials {
+    margin-bottom: 0;
+  }
+}
+
 /* socials link,footer */
 .socials {
   display: -webkit-box;
@@ -632,12 +636,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  .socials {
-    margin-bottom: 0;
-  }
 }
 
 .socials__item {
@@ -693,6 +691,12 @@ body {
 
 /* ============================== */
 /* mails */
+@media screen and (min-width: 1200px) {
+  .mails {
+    margin-left: auto;
+  }
+}
+
 .mails__text {
   font-weight: 700;
   font-size: 14px;
@@ -863,33 +867,39 @@ body {
   color: var(--accent-txt-cl);
 }
 
-.connection__item {
-  padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.17;
-  text-decoration: none;
-  letter-spacing: 0.02em;
-  color: var(--accent-txt-cl);
+.connection {
+  margin-bottom: 64px;
 }
 
-.connection__item--mail {
-  font-size: 24px;
-  line-height: 1.16;
-  padding-bottom: 0;
-  margin-bottom: 64px;
-  color: #757575;
+.connection__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .connection__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
   text-decoration: none;
+  letter-spacing: 0.02em;
+  color: var(--grey-txt-cl);
+}
+
+.connection__link--accent {
+  color: var(--accent-txt-cl);
+}
+@media screen and (min-width: 480px) {
+  .connection__link--accent {
+    font-size: 34px;
+  }
 }
 
 .networks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px 20px;
 }
 
 .networks__item {
@@ -931,6 +941,23 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 /* =============== HERO ============== */
@@ -987,7 +1014,7 @@ body {
 }
 
 .hero__title {
-  width: 360px;
+  max-width: 360px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -1001,7 +1028,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -1146,6 +1173,7 @@ body {
 }
 
 .employees__item {
+  background-color: var(--white-txt-bg-cl);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -1166,7 +1194,6 @@ body {
 .employees__container {
   padding-top: 30px;
   padding-bottom: 24px;
-  background-color: var(--white-txt-bg-cl);
 }
 @media screen and (min-width: 1200px) {
   .employees__container {
@@ -1196,11 +1223,12 @@ body {
   font-size: 28px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1216,6 +1244,7 @@ body {
 .logos__item {
   -ms-flex-preferred-size: calc((100% - 30px) / 2);
       flex-basis: calc((100% - 30px) / 2);
+  height: 92px;
 }
 @media screen and (min-width: 768px) {
   .logos__item {
@@ -1271,7 +1300,6 @@ body {
 
 @media screen and (min-width: 767px) {
   .footer__container {
-    gap: 70px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
@@ -1296,8 +1324,6 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
   }
 }
 
@@ -1312,6 +1338,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__container--contacts {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__container--contacts {
@@ -1322,7 +1354,7 @@ body {
 }
 
 .footer__logo {
-  padding: 0;
+  margin-bottom: 20px;
 }
 
 .footer__contact {
@@ -1345,21 +1377,6 @@ body {
   }
 }
 
-.contact {
-  text-align: center;
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  .contact {
-    margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contact {
-    text-align: left;
-  }
-}
-
 .contact__item + .contact__item {
   margin-top: 8px;
 }
@@ -1374,7 +1391,6 @@ body {
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
-  margin-top: 20px;
   color: var(--white-txt-bg-cl);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1384,12 +1400,11 @@ body {
 }
 
 .contact__link {
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-style: normal;
-  color: var(--grey-txt-cl);
+  color: rgba(255, 255, 255, 0.6);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1421,13 +1436,13 @@ body {
       flex-wrap: wrap;
   max-width: 326px;
   margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
   gap: 15px 8px;
 }
 @media screen and (min-width: 768px) {
   .filters {
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 575px;
   }
 }
@@ -1522,6 +1537,11 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .portfolio__container--text {
+    padding: 24px;
+  }
+}
 
 .portfolio__item:hover .portfolio__container--text,
 .portfolio__item:focus .portfolio__container--text {
@@ -1533,6 +1553,11 @@ body {
   font-size: 18px;
   line-height: 1.55;
   color: var(--white-txt-bg-cl);
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .portfolio__description {
+    font-size: 14px;
+  }
 }
 
 .portfolio__container--projects {

@@ -1,7 +1,5 @@
 /* navigation */
-.nav__list {
-  display: flex;
-  gap: 50px;
+.nav{
   align-items: center;
   margin-left: 87px;
 
@@ -15,6 +13,11 @@
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
+}
+
+.nav__list {
+  display: flex;
+  gap: 50px;
 }
 
 .nav__link {

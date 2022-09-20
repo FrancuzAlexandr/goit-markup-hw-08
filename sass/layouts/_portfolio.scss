@@ -6,12 +6,12 @@
   flex-wrap: wrap;
   max-width: 326px;
   margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
   gap: 15px 8px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 575px;
   }
 
@@ -86,6 +86,10 @@
   left: 0;
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    padding: 24px;
+  }
 }
 
 .portfolio__item:hover .portfolio__container--text,
@@ -97,6 +101,10 @@
   font-size: 18px;
   line-height: 1.55;
   color: var(--white-txt-bg-cl);
+
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    font-size: 14px;
+  }
 }
 
 .portfolio__container--projects {

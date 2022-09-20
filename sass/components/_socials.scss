@@ -1,15 +1,17 @@
-/* socials link,footer */
-.socials {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  
+.footer__container--socials{
   margin-bottom: 60px;
   
     @media screen and (min-width: 768px) {
       margin-bottom: 0;
     }
   }
+
+/* socials link,footer */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 
 .socials__item {
   width: 44px;

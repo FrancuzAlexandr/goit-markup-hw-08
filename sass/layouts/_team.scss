@@ -22,6 +22,7 @@
 }
 
 .employees__item {
+  background-color: var(--white-txt-bg-cl);
   
   @media screen and(min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);
@@ -38,7 +39,6 @@
 .employees__container {
   padding-top: 30px;
   padding-bottom: 24px;
-  background-color: var(--white-txt-bg-cl);
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 30px;
