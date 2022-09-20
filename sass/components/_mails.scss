@@ -1,5 +1,9 @@
 /* mails */
 .mails {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-left: auto;
   }
